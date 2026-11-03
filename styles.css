@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1f2937;
+    
+}
+
+
+.hero,
+footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.hero {
+    min-height: 403px;
+}
+
+.navbar {
+    max-width: 772px;
+    height: 50px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.hero-content {
+    max-width: 772px;
+    margin: 74px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 3px;
+    color: #F9FAF8;
+}
+
+.hero-text p {
+    color: #e5e7eb;
+    font-size: 18px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+.primary-button,
+.secondary-button {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.primary-button {
+    background-color: #3882f6;
+    border: none;
+    padding: 7px 27px;
+    font-size: 14px;
+}
+
+.hero-image {
+    width: 393px;
+    height: 179px;
+    flex-shrink: 0;
+
+    background-color: #707780;
+    color: #f9faf8;
+    font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.information {
+    min-height: 375px;
+    padding: 36px 20px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.information h2 {
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 36px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 126px;
+    text-align: center;
+}
+
+.card-image {
+    width: 126px;
+    height: 127px;
+    border: 3px solid #3882f6;
+    border-radius: 12px;
+    margin-bottom: 6px;
+}
+
+.card p {
+    color: #E5E7EB;
+    font-size: 18px;
+    line-height: 16px;
+}
+
+.testimonial {
+    min-height: 323px;
+    padding: 50px 20px;
+    background-color: #e5e7eb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-container {
+    max-width: 568px;
+    width: 100%;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.27;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+
+.action-section {
+    min-height: 263px;
+    padding: 75px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-box {
+    width: 772px;
+    min-height: 113px;
+    padding: 30px 91px;
+
+    background-color: #3882f6;
+    border-radius: 6px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-text h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.action-text p {
+    color: #e5e7eb;
+    font-size: 13px;
+}
+
+.secondary-button {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 25px;
+    font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+    .hero-image {
+        width: 400px;
+        height: 150px;
+        display: flex;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    .image-in-flex {
+        width : 100%;
+        height : 100%;
+        object-fit : cover;
+        object-position: center;
+    }
+
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .hero-content {
+        padding: 0 25px 45px;
+        margin-top: 55px;
+    }
+
+    .action-box {
+        padding: 25px 35px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar,
+    .hero-content,
+    .action-box {
+        flex-direction: column;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #E5E7EB;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-bottom: 35px;
+    }
+
+    .hero-content {
+        margin-top: 35px;
+        padding: 0 25px 0;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 393px;
+    }
+
+    .information {
+        padding: 40px 20px;
+    }
+
+    .information h2 {
+        font-size: 24px;
+    }
+
+    .cards {
+        gap: 25px;
+    }
+
+    .testimonial {
+        padding: 55px 30px;
+    }
+
+    .quote {
+        font-size: 21px;
+    }
+
+    .action-section {
+        padding: 50px 20px;
+    }
+
+    .action-box {
+        padding: 30px 20px;
+        text-align: center;
+        gap: 20px;
+    }
+}
