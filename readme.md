@@ -1,0 +1,1 @@
+/* this project is a test that shows my understadning of html and css basics up till this point. It will usitlize flexbox and css tool managment in order to properly make a readable website. */
